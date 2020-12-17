@@ -11,7 +11,15 @@ num = "0123456789"
 sym = "[]{}()!@#-$%^&:;*_,.+=""<>~`"
 
 main = (low+upp+num+sym)
+root = Tk()
+root.wm_iconbitmap("passman.ico")
+root.title("Password-Generator")
+root.geometry("600x460")
 
+scvalue = StringVar()
+scvalue.set('')
+screen = Entry(root, font="consolas 20")
+screen.pack(side=LEFT, padx=10, pady=12, ipady=12, fill=BOTH, anchor=N)
 
 # ^ Functions
 ''' Need someone who can help me with this..'''
@@ -30,22 +38,19 @@ def srt():
 
 
 def cle():
-    # scvalue.set("")
+    scvalue.set("")
     screen.update()
 
 
 def qui():
     sure = tmsb.askquestion(
         "Confirm Exit", "Are you Sure You want to Exit\n???")
-    if sure == YES:
-        quit
+    if sure == "yes":
+        quit()
 #! Main body
 
 
-root = Tk()
-root.wm_iconbitmap("passman.ico")
-root.title("Password-Generator")
-root.geometry("600x460")
+
 
 
 # @ Heading
@@ -53,10 +58,6 @@ f1 = Frame(root, bg="#FF5733", borderwidth=10, relief=SUNKEN)
 he = Label(f1, text="Password-Generator", font="hack 30 bold").pack(anchor=N)
 f1.pack(padx=2, pady=10)
 
-scvalue = StringVar()
-scvalue.set('')
-screen = Entry(root, font="consolas 20")
-screen.pack(side=LEFT, padx=10, pady=12, ipady=12, fill=BOTH, anchor=N)
 
 
 # %Buttons.
