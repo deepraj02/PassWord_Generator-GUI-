@@ -14,12 +14,14 @@ All the password will contain atleast :-
 {The Project is still under Construction, Therefore Contributions will be appreciated}.
 
 Follow Me on :---
-    #GitHub - https://github.com/deepraj02
-    #Instagram - https://www.instagram.com/deeprajbaidya02/?hl=en
+    
+   #GitHub - https://github.com/deepraj02
+    
+   #Instagram - https://www.instagram.com/deeprajbaidya02/?hl=en
 
 Thanks,
 HAPPY CODING........
 
 
 With Regards,
-Deepraj.
+Deepraj Baidya.
