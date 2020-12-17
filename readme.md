@@ -1,4 +1,4 @@
-Hey Guys it's a python GUI project Which generates passwords for you based on your preference.
+Hey Guys it's a python GUI (Tkinter) project Which generates passwords for you based on your preference.
 
 There are 3 categories of passwords which it generates..
         1)Weak{upto 6 digits}.
