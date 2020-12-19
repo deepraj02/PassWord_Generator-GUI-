@@ -18,8 +18,6 @@ root.geometry("600x460")
 
 scvalue = StringVar()
 scvalue.set('')
-screen = Entry(root, font="consolas 20")
-screen.pack(side=LEFT, padx=10, pady=12, ipady=12, fill=BOTH, anchor=N)
 
 # ^ Functions
 ''' Need someone who can help me with this..'''
@@ -54,10 +52,12 @@ def qui():
 
 
 # @ Heading
-f1 = Frame(root, bg="#FF5733", borderwidth=10, relief=SUNKEN)
+f1 = Frame(root, bg="#FF5733", borderwidth=10,relief=SUNKEN,)
 he = Label(f1, text="Password-Generator", font="hack 30 bold").pack(anchor=N)
 f1.pack(padx=2, pady=10)
 
+screen = Entry(root, font="consolas 20")
+screen.pack(side=LEFT, padx=10, pady=12, ipady=12, fill=BOTH, anchor=N)
 
 
 # %Buttons.
