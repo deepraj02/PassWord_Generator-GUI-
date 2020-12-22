@@ -3,14 +3,15 @@
 from tkinter import *
 import tkinter.messagebox as tmsb
 import random
-from PIL import Image, ImageTk
 
 low = "abcdefghijklmnopqrstuvwxyz"
 upp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 num = "0123456789"
 sym = "[]{}()!@#-$%^&:;*_,.+=""<>~`"
 
-main = (low+upp+num+sym)
+
+
+# main = (low+upp+num+sym)
 root = Tk()
 root.wm_iconbitmap("passman.ico")
 root.title("Password-Generator")
@@ -19,10 +20,18 @@ root.geometry("600x460")
 scvalue = StringVar()
 scvalue.set('')
 
+
+# @ Heading
+f1 = Frame(root, bg="#FF5733", borderwidth=10,relief=SUNKEN,)
+he = Label(f1, text="Password-Generator", font="hack 30 bold").pack(anchor=N)
+f1.pack(padx=2, pady=10)
+
+screen = Entry(root, font="consolas 20",)
+screen.pack(side=LEFT, padx=10, pady=10, ipady=12, fill=BOTH, anchor=N)
+
+
 # ^ Functions
 ''' Need someone who can help me with this..'''
-
-
 def sh():
     pass
 
@@ -31,10 +40,11 @@ def med():
     pass
 
 
-def srt():
-    pass
-
-
+def srt(hih):
+    main = (low+upp+num+sym)
+    x=scvalue.set("".join(random.sample(main,hih)))
+    screen.update(x)
+    hih=16
 def cle():
     scvalue.set("")
     screen.update()
@@ -51,13 +61,7 @@ def qui():
 
 
 
-# @ Heading
-f1 = Frame(root, bg="#FF5733", borderwidth=10,relief=SUNKEN,)
-he = Label(f1, text="Password-Generator", font="hack 30 bold").pack(anchor=N)
-f1.pack(padx=2, pady=10)
 
-screen = Entry(root, font="consolas 20")
-screen.pack(side=LEFT, padx=10, pady=12, ipady=12, fill=BOTH, anchor=N)
 
 
 # %Buttons.
