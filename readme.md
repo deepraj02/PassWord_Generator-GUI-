@@ -39,7 +39,7 @@ My Github: [GitHub](https://github.com/deepraj02)
 <br>
 Instagram: [Instagram](https://www.instagram.com/deeprajbaidya02/?hl=en)
 <br>
-Website: [Hi,I am Deepraj](https://deepraj02.github.io)
+Website: [Hi,I am Deepraj](https://sites.google.com/view/deeprajbaidya)
 <br>
 Email: deeprajbaidya06@gmail.com
 </details>

@@ -9,16 +9,11 @@ upp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 num = "0123456789"
 sym = "[]{}()!@#-$%^&:;*_,.+=""<>~`"
 
-
-
-# main = (low+upp+num+sym)
 root = Tk()
 root.wm_iconbitmap("passman.ico")
 root.title("Password-Generator")
 root.geometry("600x460")
-
-scvalue = StringVar()
-scvalue.set('')
+root.configure(bg="#2C3335")
 
 
 # @ Heading
@@ -33,22 +28,39 @@ screen.pack(side=LEFT, padx=10, pady=10, ipady=12, fill=BOTH, anchor=N)
 # ^ Functions
 ''' Need someone who can help me with this..'''
 def sh():
-    pass
+    global low,upp,num,sym
+    main=(low+upp+num+sym)
 
+    length=8
+
+    password="".join(random.sample(main,length))
+    screen.delete(0,"end")
+    screen.insert(0,password)
 
 def med():
-    pass
+    global low,upp,num,sym
+    main=(low+upp+num+sym)
+
+    length=12
+
+    password="".join(random.sample(main,length))
+    screen.delete(0,"end")
+    screen.insert(0,password)
 
 
-def srt(hih):
-    main = (low+upp+num+sym)
-    x=scvalue.set("".join(random.sample(main,hih)))
-    screen.update(x)
-    hih=16
+
+def srt():
+    global low,upp,num,sym
+    main=(low+upp+num+sym)
+
+    length=20
+
+    password="".join(random.sample(main,length))
+    screen.delete(0,"end")
+    screen.insert(0,password)
+
 def cle():
-    scvalue.set("")
-    screen.update()
-
+    screen.delete(0,"end")
 
 def qui():
     sure = tmsb.askquestion(
@@ -56,12 +68,6 @@ def qui():
     if sure == "yes":
         quit()
 #! Main body
-
-
-
-
-
-
 
 
 # %Buttons.
@@ -86,3 +92,4 @@ b = Button(root, text="Exit", font="Consolas 18",
 b.pack(padx=10, pady=10, anchor=NE)
 
 root.mainloop()
+
