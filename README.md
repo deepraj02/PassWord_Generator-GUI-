@@ -12,12 +12,14 @@
 ## **JUMBLE WORD GAME**...
 <br>
 
-The library management system in python which we are going to build will look something like this.....
+The library management system in python which we are going to build will look something like this....
+Here is a OLD VS NEW Layout after the recent Update.
 
 
-<img src="Assets/mainpic1.png">
+<img style="float: left;" src="Assets/mainpic1.png">
+<img style="float: left;" src="Assets/red2.png">
 <br>
-<img src=Assets/pic2.png>
+<img src=Assets/red3.png>
 <br>
 <img src=Assets/pic3.png>
 
